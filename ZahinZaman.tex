@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zahin M. Zaman} \\ \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ (519) 721-2837 $|$
+    \href{mailto:alvii147@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{alvii147@gmail.com}} \\ \vspace{3pt}
+    \href{https://www.linkedin.com/in/zahin-zaman}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/zahin-zaman}} $|$
+    \href{https://github.com/alvii147}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/alvii147}} $|$
+    \href{https://zahin-zaman.vercel.app}{\raisebox{-0.2\height}\faAddressCard\ \underline{zahin-zaman.vercel.app}}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, JavaScript/TypeScript, SQL, Rust, C++} \\
+     \textbf{Frameworks}{: Django, React, Flask, FaskAPI, NumPy, TensorFlow, PyTorch} \\
+     \textbf{Developer Tools}{: Git, Docker,  Google Cloud Platform} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {1Password}{Toronto, ON}
+      {Jr. Software Developer}{July 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Enhanced billing capabilities using Go and Stripe by refining invoicing system and subscription workflow}
+        \resumeItem{Spearheaded server-side invoice PDF generation project, addressing 300+ customer feature requests}
+        \resumeItem{Attentively upgraded Stripe SDK and API on large scale web server by 4 major versions}
+        \resumeItem{Automated taxation and notification processes for various countries and states}
+        \resumeItem{Investigated and addressed 80+ billing related customer inquiries and support requests}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Developer Intern}{Sep. 2022 -- Dec. 2022}
+      \resumeItemListStart
+        \resumeItem{Expanded Go web server that manages payments, subscriptions, tiers, and promotions using Stripe}
+        \resumeItem{Significantly improved credit card form and payment flow user experience using React and TypeScript}
+        \resumeItem{Dockerized billing microservice for Apply Pay and Play Store subscriptions using multi-staged Docker builds}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Prodigy Education}{Toronto, ON}
+      {Full-Stack Developer Intern}{Jan. 2022 -- Apr. 2022}
+      \resumeItemListStart
+        \resumeItem{Maintained OAuth 2 and OIDC identity service built on Ruby on Rails}
+        \resumeItem{Leveraged multi-staged Docker builds to optimize production server image size by 58.4\%}
+        \resumeItem{Designed and documented Apache Kafka calls to stream server events for data tracking}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nokia}{Ottawa, ON}
+      {Full-Stack Developer Intern}{May 2021 -- Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{Implemented authentication security, automated blogs, and voucher system for Nokia Network Developer Portal}
+        \resumeItem{Incorporated Django REST Framework to establish permissions, cross-site scripting protection, and honeypots}
+        \resumeItem{Composed unit tests for forms, models, and API endpoints, improving coverage for entire codebase by 10\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Wind River Systems}{Ottawa, ON}
+      {Software Developer Intern}{Sep. 2020 -- Dec. 2020}
+%      \resumeItemListStart
+%        \resumeItem{Devised thread-safe functions in C and inline Assembly to improve VxWorks RTOS}
+%        \resumeItem{Developed interactive PyQt5 application that assists in writing Git commit messages and verifies Jira issues}
+%      \resumeItemListEnd
+
+    \vspace{2pt}
+    \resumeSubheading
+      {Qualcomm}{Markham, ON}
+      {Hardware Verification Engineer Intern}{Jan. 2020 -- May. 2020}
+%      \resumeItemListStart
+%        \resumeItem{Attained 20\% improvement of functional coverage using SystemVerilog assertions to verify processor design}
+%        \resumeItem{Automated format verification using Perl script that extracts design hierarchy and formulates assertions}
+%      \resumeItemListEnd
+
+    \vspace{2pt}
+    \resumeSubheading
+      {Imagine Communications}{Toronto, ON}
+      {Embedded Software Developer Intern}{Jan. 2019 -- Apr. 2019}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Sigmoid Academy} $|$ \emph{Python, Django, React, TypeScript, PostgreSQL, Redis}}{\emph{Jan. 2022 -- Present}}
+          \resumeItemListStart
+            \resumeItem{Orchestrated Django backend to handle JWT authentication, database management, and remote-code execution}
+            \resumeItem{Authored 19 data science and machine learning coding challenges, including introductory tutorials}
+            \resumeItem{Managed authentication and maintenance of user base of 150+ using PostgreSQL and Redis databases}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{STUMPY} $|$ \emph{Python, NumPy, Numba, SciPy}}{\emph{May 2021 -- Aug. 2023}}
+          \resumeItemListStart
+            \resumeItem{Published comprehensive tutorials on Matrix Profile annotation vectors based on research paper}
+            \resumeItem{Implemented tiling scheme algorithm that leverages cache lines to improve computation speeds by up to 50\%}
+            \resumeItem{Devised heuristic algorithm that can provide fast approximation to Matrix Profile}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {B.A.Sc. in Electrical Engineering}{Sep. 2018 -- Apr. 2023}
+      \resumeItemListStart
+        \resumeItem{Graduation with Distinction (GPA: 85.9/100)}
+        \resumeItem{Specialization in Artificial Intelligence}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\end{document}
