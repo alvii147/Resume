@@ -48,7 +48,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -125,21 +125,23 @@
     \resumeSubheading
       {1Password}{Toronto, ON}
       {Software Developer}{Mar. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Diagnosed and resolved complex invoicing defect in Stripe integration, recovering \$300k+ in annual revenue}
+        \resumeItem{Automated tax notification process over 13 countries and respective regions, significantly reducing manual effort}
+      \resumeItemListEnd
 
     \resumeSubSubheading
       {Jr. Software Developer}{July 2023 -- Feb. 2025}
       \resumeItemListStart
-        \resumeItem{Enhanced billing capabilities using Go and Stripe by refining invoicing system and subscription workflow}
         \resumeItem{Engineered automated customer reimbursement worker, refunding 2k+ invoices and saving \$45k+ in revenue}
         \resumeItem{Optimized subscription management processor, condensing average daily runtime from 6 hours to 45 minutes}
-        \resumeItem{Spearheaded server-side invoice PDF generation project, addressing 300+ customer feature requests}
-        \resumeItem{Automated taxation and notification processes for various countries and states}
+        \resumeItem{Spearheaded internal invoice PDF generation service, addressing 300+ customer feature requests}
       \resumeItemListEnd
 
     \resumeSubSubheading
       {Software Developer Intern}{Sep. 2022 -- Dec. 2022}
       \resumeItemListStart
-        \resumeItem{Expanded Go web server that manages payments, subscriptions, tiers, and promotions using Stripe}
+        \resumeItem{Managed subscription tier upgrade/downgrade logic through Stripe integration in Go and feature flags}
         \resumeItem{Significantly improved credit card form and payment flow user experience using React and TypeScript}
         \resumeItem{Dockerized billing microservice for Apply Pay and Play Store subscriptions using multi-staged Docker builds}
       \resumeItemListEnd
@@ -193,8 +195,8 @@
       \resumeProjectHeading
           {\textbf{Sigmoid Academy} $|$ \emph{\href{https://sigmoid-academy.netlify.app/}{sigmoid-academy.netlify.app}}}{\emph{Jan. 2022 -- Present}}
           \resumeItemListStart
-            \resumeItem{Orchestrated Django backend to handle JWT authentication, database management, and remote-code execution}
-            \resumeItem{Authored 19 data science and machine learning coding challenges, including introductory tutorials}
+            \resumeItem{Orchestrated Django backend with JWT authentication, GitHub OAuth, and remote code execution}
+            \resumeItem{Authored 20+ data science and machine learning coding challenges, including comprehensive tutorials}
             \resumeItem{Managed authentication and maintenance of user base of 200+ using PostgreSQL and Redis databases}
           \resumeItemListEnd
       \resumeProjectHeading
